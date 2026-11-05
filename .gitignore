@@ -1,0 +1,26 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Logs and caches
+logs/*.log
+logs/*.csv
+.cache/
+
+# Data: FMP's free plan is personal-use only, so downloads are never committed. Each person re-downloads.
+data/raw/*
+!data/raw/.gitkeep
+
+# validate --repro keeps the previous data/clean here until the rebuild is confirmed
+data/clean_backup/
+
+# The dataset is built from FMP data under a personal-use licence: do not publish it
+data/clean/*.csv
