@@ -19,8 +19,8 @@ logs/*.csv
 data/raw/*
 !data/raw/.gitkeep
 
-# validate --repro keeps the previous data/clean here until the rebuild is confirmed
-data/clean_backup/
+# The dataset is built from FMP data under a personal-use licence: do not publish it (in any file format)
+data/clean/
 
-# The dataset is built from FMP data under a personal-use licence: do not publish it
-data/clean/*.csv
+# Results are derived from the same FMP data: not published either. Everyone rebuilds them with python run_all.py
+outputs/
